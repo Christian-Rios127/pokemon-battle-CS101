@@ -1,0 +1,220 @@
+import time
+import pygame
+def draw_alakazam():
+    print("                                               _,'|")
+    print("                                             .'  /")
+    print("                    __                     ,'   '")
+    print("                   `  `.                 .'    '")
+    print("                    \   `.             ,'     '")
+    print("                     \    `.          ,      /")
+    print("                      .     `.       /      ,")
+    print("                      '       ..__../'     /")
+    print("                       \     ,''   '      . _.._ ")
+    print("                        \  ,'             |'    `'._ ")
+    print("                         |/               ,---.._   `. ")
+    print("                       ,-|           .   '       `-.  \ ")
+    print("                     ,'  |     ,   ,'   :           '__\_ ")
+    print("                     |  /,_   /  ,U|    '            |   .__ ")
+    print("                     `,' `.\ `./..-'  __ \           |   `. `. ")
+    print("                       `',_|  /     ,'  `.`._       .|     \ | ")
+    print("                      / /_.| j  ---'.     `._`-----`.`     | | ")
+    print("                     / // ,|`'  `-/' `.      `'/-+--'    ,'  `. ")
+    print("                 _,.`,'| / |.'  -,' \  \       \ '._    /     | ")
+    print(" .--.      _,.-''   `| L \ \__ ,^.__.\  `.  _,--`._,>+-'  __,-' ")
+    print(":    \   ,'          |  | \          /.   `'      '.  `--'| \ ")
+    print("'    | ,-.. `'   _,--' ,'  \        `.\            7      |,.\ ")
+    print(" `._ '.  .`.    .>  `-.-    |-.''---..-\        _>`       `.-' ")
+    print("    `.,' | l  ,' ,>         | `.___,....\._    ,--``-. ")
+    print("   j | .'|_|.'  /_         /   _|         \`'--+--.   ` ,..._ ")
+    print("   |_`-'/  |     ,' ,.._,.'''''\           `--'    `-..'     `'. ")
+    print("     '-'_,+'\    '^-     |      \                    /         | ")
+    print("          |_/         __ \       .                   `.`.._  ,'`. ")
+    print("                  _.:'__`'        `,.                  |   `'   | ")
+    print("                 `--`-..`'        /--`               ,-`        | ")
+    print("                   `---'---------'                   ''| `     '. ")
+    print("                                                       `._,       `:._ ")
+    print("                                                         `|   ,..  |  '.")
+    print("                                                         j   '.  `-+---'")
+    print("                                                         |,.. | ")
+    print("                                                          `. `; ")
+    print("                                                            `' mh ")    
+
+def draw_gengar():
+    print("                 |`._         |\ ")
+    print("                 `   `.  .    | `.    |`. ")
+    print("                  .    `.|`-. |   `-..'  \           _,.-' ")
+    print("                  '      `-. `.           \ /|   _,-'   / ")
+    print("              .--..'        `._`           ` |.-'      / ")
+    print("               \   |                                  / ")
+    print("            ,..'   '                                 / ")
+    print("            `.                                      / ")
+    print("            _`.---                                 / ")
+    print("        _,-'               `.                 ,-  /'-._ ")
+    print("      ,'                   | `.             ,'|   `    `. ")
+    print("    .'                     |   `.         .'  |    .     `. ")
+    print("  ,'                       '   ()`.     ,'()  '    |       `. ")
+    print("'-.                    |`.  `.....-'    -----' _   |         . ")
+    print(" / ,   ________..'     '  `-._              _.'/   |         : ")
+    print(" ` '-'' _,.--''         \   | `'+--......-+' //   j `'--.. , ' ")
+    print("    `.''    .'           `. |   |     |   / //    .       ` ' ")
+    print("      `.   /               `'   |    j   /,.'     ' ")
+    print("        \ /                  `-.|_   |_.-'       /\ ")
+    print("         /                        `''          .'  \ ")
+    print("        j                                           . ")
+    print("        |                                 _,        | ")
+    print("        |             ,^._            _.-'          ' ")
+    print("        |          _.'    `'''`----`''   `._       ' ")
+    print("        j__     _,'                         `-.'-.'` ")
+    print("          ',-.,' mh ")
+
+#start program
+pygame.mixer.init()
+pygame.mixer.music.load("LastBattle.wav")
+pygame.mixer.music.play()
+
+print("You are challenged by Pokemon trainer Nery")
+time.sleep(2)
+print("Nery sends out Alakazam")
+draw_alakazam()
+print("Alakazam Cry*")
+
+
+time.sleep(5)
+print("-")
+print("You send out Gengar")
+draw_gengar()
+print("Gengar Cry*")
+time.sleep(5)
+print("-")
+
+print("Alakazam HP 130")
+print("Gengar HP 135")
+time.sleep(2)
+print("-")
+
+
+pokemon1 = "Alakazam"
+pokemon2 = "Gengar"
+
+list1 = ["Psychic","Recover","Dig","Double Team"]
+list2 = ["Psychic","Hypnosis","Thunderbolt","Mimic"]
+
+time.sleep(5)
+
+print("Fight")
+print("Pokemon")
+print("Item")
+print("Run")
+print("-")
+time.sleep(3)
+
+#"Nery" picks list1 [3]
+print("Alakazam use Double Team!")
+print (list1 [3])
+print ("Evasiveness +1")
+print("-")
+time.sleep(2)
+
+print("Gengar uses Thunderbolt!")
+print (list2 [2])
+print("Not very effective")
+print("-")
+time.sleep(4)
+
+print("Alakazam is paralyzed! Its may be unable to move!")
+time.sleep(2)
+
+print("-")
+print("Alakazam HP 95")
+print("Gengar HP 135")
+print("-")
+time.sleep(2)
+
+#”Nery” pick list1 [2] 
+print("Alakazam use Dig!")
+print("Alakazam dug under the ground")
+print("-")
+time.sleep(2)
+
+print("Gengar use Thunderbolt!")
+print("Attack missed")
+time.sleep(2)
+print("-")
+      
+print("Alakazam HP 95")
+print("Gengar HP 135")
+time.sleep(2)
+
+print("-")
+print("Alakazam use dig")
+print("not very effective")
+print("-")
+time.sleep(2)
+
+print("Gengar use Thunderbolt!")
+print("not very effective")
+print("-")
+time.sleep(3)
+
+print("Alakazam HP 55")
+print("Gengar HP 94") 
+print("-")
+time.sleep(2)
+
+print("Alakazam use Recover")
+print("Alakazam Recovered 75 HP")
+print("-")
+time.sleep(2)
+
+print("Gengar use Mimic")
+print("Gengar Recovered 41 HP")
+print("-")
+time.sleep(2)
+
+print("Alakazam HP 130")
+print("Gengar HP 135")
+print("-")
+time.sleep(2)
+
+print("Alakazam use psychic")
+print("Alakazam is paralyzed unable to move!")
+print("-")
+time.sleep(2)
+print("Gengar use psychic")
+print("not very effective")
+print("-")
+time.sleep(2)
+
+print("Alakazam HP 65")
+print("Gengar HP 135")
+print("-")
+time.sleep(2)
+
+print("Alakazam use psychic")
+print("Super effective!")
+print("-")
+time.sleep(2)
+print("Gengar use psychic")
+print("not very effective")
+print("-")
+time.sleep(2)
+
+print("Alakazam HP 0")
+print("Gengar HP 10")
+print("-")
+time.sleep(2)
+
+print("Alakazam fainted")
+print("-")
+time.sleep(2)
+pygame.mixer.stop()
+pygame.mixer.music.load("win.mp3")
+pygame.mixer.music.play()
+print("you win!")
+print("-")
+print("Special thanks to professor Nery,and Michael!")
+time.sleep(10)
+pygame.mixer.stop()
+
+
+
